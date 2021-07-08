@@ -2,14 +2,14 @@
   {
     "guests": [
       {
-        "email": "feihong@hoo.boy",
-        "name": "feihong"
+        "email": "louis@nospam.com",
+        "name": "louis"
       }
     ],
-    "date": 1563938269514,
+    "date": 1625759983136,
     "host": {
-      "email": "feihong@hoo.boy",
-      "name": "feihong"
+      "email": "louis@nospam.com",
+      "name": "louis"
     },
     "name": "OCaml/Reason Meetup!",
     "access": {

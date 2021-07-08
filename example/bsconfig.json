@@ -1,28 +1,27 @@
-
 {
   "name": "client",
   "version": "0.0.1",
   "generators": [
     {
       "name": "atd_t",
-      "command": "esy atdgen -t $in"
+      "command": "npx atdgen -t $in"
     },
     {
       "name": "atd_bs",
-      "command": "esy atdgen -bs $in"
+      "command": "npx atdgen -bs $in"
     }
   ],
   "sources": {
-    "dir" : "src",
-    "subdirs" : true,
+    "dir": "src",
+    "subdirs": true,
     "generators": [
       {
         "name": "atd_t",
-        "edge": ["meetup_t.ml", "meetup_t.mli", ":", "meetup.atd"]
+        "edge": [ "meetup_t.ml", "meetup_t.mli", ":", "meetup.atd" ]
       },
       {
         "name": "atd_bs",
-        "edge": ["meetup_bs.ml", "meetup_bs.mli", ":", "meetup.atd"]
+        "edge": [ "meetup_bs.ml", "meetup_bs.mli", ":", "meetup.atd" ]
       }
     ]
   },
@@ -31,13 +30,9 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": [
-    "@ahrefs/bs-atdgen-codec-runtime"
-  ],
+  "bs-dependencies": [ "@ahrefs/bs-atdgen-codec-runtime", "bs-fetch" ],
   "warnings": {
-    "error" : "+101"
+    "error": "+101"
   },
-  "generate-merlin": true,
-  "namespace": true,
-  "refmt": 3
+  "generate-merlin": true
 }
